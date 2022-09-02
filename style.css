@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+}
+
+.container {
+    background: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 50%;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.product-image-mobile {
+    display: none;
+}
+
+.description {
+    width: 39%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 32px 30px 0 28px; 
+}
+
+.description h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 0.7em;
+    color: hsla(228, 12%, 48%, 0.8);
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+.description h1 {
+    font-family: 'Fraunces', serif;
+    color: hsla(212, 21%, 14%, 0.9);
+    line-height: 1em;
+    font-size: 2em;
+    margin: 22px 0;
+}
+
+.description p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: hsla(228, 12%, 48%, 0.8);
+    margin: 0 0 30px;
+}
+
+.prices h1 {
+    display: inline;
+    color: hsl(158, 36%, 37%);
+    padding: 0;
+    margin-right: 17px;
+}
+
+.prices p {
+    display: inline;
+    vertical-align: top;
+    line-height: 2.5;
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    background: hsl(158, 36%, 37%);
+    margin-top: 30px;
+    padding: 16px 0;
+    border: none;
+    border-radius: 7px;
+    justify-content: center;
+    letter-spacing: 0.4px;
+}
+
+button:hover {
+    background: hsl(158, 40%, 28%);
+    cursor: pointer;
+}
+
+svg {
+    display: inline;
+    vertical-align: top;
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 92%;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        margin: 25px 4%;
+    }
+
+    .product-image {
+        display: none;
+    }
+
+    .product-image-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .description {
+        padding: 7%;
+        width: 86%;
+    }
+
+    .description h1 {
+        margin: 15px 0;
+    }
+
+    .description p {
+        margin-bottom: 25px;
+    }
+
+    .prices h1 {
+        margin-right: 15px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    button:hover {
+        color: hsl(0, 0%, 100%);
+        background: hsl(158, 36%, 37%);
+    }
+
+    button:active {
+        background: hsl(158, 40%, 28%);
+    }
+
+}
